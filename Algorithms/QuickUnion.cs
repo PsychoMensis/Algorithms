@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
-    internal class QuickFind
+    internal class QuickUnion
     {
-
     }
 }
