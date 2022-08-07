@@ -14,19 +14,22 @@ namespace Algorithms
         {
             int [] BS = new int[] { 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
 
-            QuickFind quickFind = new QuickFind();
+            WeightedQuickUnion quickUnion = new WeightedQuickUnion();
 
-            quickFind.QuickFindUF(10);
-            quickFind.Union(4, 3);
-            quickFind.Union(3, 8);
-            quickFind.Union(6, 5);
-            quickFind.Union(9, 4);
-            quickFind.Union(2, 1);
-            quickFind.Connected(8, 9);
-            quickFind.Connected(5, 0);
-            quickFind.Union(5, 0);
-            quickFind.Union(7, 2);
-            quickFind.Union(6, 1);
+            quickUnion.QuickFindUF(10);
+            quickUnion.Union(4, 3);
+            quickUnion.Union(3, 8);
+            quickUnion.Union(6, 5);
+            quickUnion.Union(9, 4);
+            quickUnion.Union(2, 1);
+            quickUnion.Union(9, 4);
+            quickUnion.Union(5, 0);
+            quickUnion.Union(7, 2);
+            quickUnion.Union(6, 1);
+            quickUnion.Union(7, 3);
+
+            Console.WriteLine(quickUnion.Connected(8, 9));
+            Console.WriteLine(quickUnion);
 
         }
     }
