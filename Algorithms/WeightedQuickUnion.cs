@@ -27,7 +27,7 @@ namespace Algorithms
             int j = Root(q);
             if (i == j) return;
 
-            if (sz[i] > sz[j])
+            if (sz[i] < sz[j])
             {
                 id[i] = j;
                 sz[j] += sz[i];
@@ -35,7 +35,7 @@ namespace Algorithms
             else
             {
                 id[j] = i;
-                sz[i] += sz[i]; 
+                sz[i] += sz[j]; 
             }
         }
     }
