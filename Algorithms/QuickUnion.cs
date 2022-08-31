@@ -20,7 +20,7 @@ namespace Algorithms
             }
         }
         
-        protected int Root(int i)
+        protected virtual int Root(int i)
         {
             while (i != id[i]) i = id[i];
             return i;

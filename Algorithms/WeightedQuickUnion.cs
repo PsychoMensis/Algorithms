@@ -21,6 +21,13 @@ namespace Algorithms
                 sz[i] = 1;
             }
         }
+        protected override int Root(int i)
+        {
+            id[i] = id[id[i]];
+            while (i != id[i]) i = id[i];
+            return i;
+        }
+
         public override void Union(int p, int q)
         {
             int i = Root(p);
