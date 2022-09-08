@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
-    internal class Divide_and_Conquer
+    internal class DivideAndConquer
     {
         public int Sum(int[] arr, int length)
         {

@@ -12,16 +12,19 @@ namespace Algorithms
         
         public static void Main(string[] args)
         {
-            int [] BS = new int[] { 4, 5, 6, 7, 8, 9, 10, 11, 1,  12, 13 };
-            int[] BS2 = new int[] { 2, 4, 6 };
+            int [] BS = new int[] { 4, 6, 8, 2, 1, 3, 10, 51, 5,  34, 17 };
+            int[] BS2 = new int[] { 24, 44, 36, 25 };
 
-            SelectionSort sort = new SelectionSort();
-            int[] sorted = sort.SelSort(BS);
+            QuickSort qs = new QuickSort();
 
-            Divide_and_Conquer arr = new Divide_and_Conquer();
+            int[] a = qs.AscendingSort(BS, 0, BS.Length - 1);
 
-            int sum = arr.Sum(sorted, sorted.Length);
-            Console.WriteLine(sum);
+            int [] b = qs.DescendingSort(BS2, 0, BS2.Length - 1);
+
         }
+
+
+
+
     }
 }
